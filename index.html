@@ -218,7 +218,18 @@
             </div>
           </div>
         </section>
-        <a class="dg-widget-link" href="http://2gis.ru/arkhangelsk/firm/70000001022631919/center/40.54802119731904,64.55154296498199/zoom/18?utm_medium=widget-source&utm_campaign=firmsonmap&utm_source=bigMap">Посмотреть на карте Архангельска</a><div class="dg-widget-link"><a href="http://2gis.ru/arkhangelsk/firm/70000001022631919/photos/70000001022631919/center/40.54802119731904,64.55154296498199/zoom/17?utm_medium=widget-source&utm_campaign=firmsonmap&utm_source=photos">Фотографии компании</a></div><div class="dg-widget-link"><a href="http://2gis.ru/arkhangelsk/center/40.548124,64.5518/zoom/18/routeTab/rsType/bus/to/40.548124,64.5518╎ЭДДИ КАР, автосервис?utm_medium=widget-source&utm_campaign=firmsonmap&utm_source=route">Найти проезд до ЭДДИ КАР, автосервис</a></div><script charset="utf-8" src="https://widgets.2gis.com/js/DGWidgetLoader.js"></script><script charset="utf-8">new DGWidgetLoader({"width":100,"height":600,"borderColor":"","pos":{"lat":64.55154296498199,"lon":40.54802119731904,"zoom":18},"opt":{"city":"arkhangelsk"},"org":[{"id":"70000001022631919"}]});</script><noscript style="color:#c00;font-size:16px;font-weight:bold;">Виджет карты использует JavaScript. Включите его в настройках вашего браузера.</noscript>
+        <script src="https://maps.api.2gis.ru/2.0/loader.js"></script>
+        <div id="map" style="width: 100%; height: 400px;"></div>
+        <script>
+            DG.then(function() {
+                DG.map('map', {
+                    center: [64.55, 40.54],
+                    zoom: 13,
+                    scrollWheelZoom: false,
+                    fullscreenControl: false
+                });
+            });
+        </script>
         <footer class="footer light">
           <div class="container">
             <div class="footer-wrapper">
